@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECHSPRINT 2026 | Initial Evaluation Results</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gdg-blue: #4285F4;
+      --gdg-red: #EA4335;
+      --gdg-yellow: #FBBC05;
+      --gdg-green: #34A853;
+      --bg-dark: #0f172a;
+      --card-bg: #111827;
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #1e293b, var(--bg-dark));
+      color: var(--text-main);
+    }
+
+    header {
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    .gdg-badge {
+      display: inline-flex;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .blue { background: var(--gdg-blue); }
+    .red { background: var(--gdg-red); }
+    .yellow { background: var(--gdg-yellow); }
+    .green { background: var(--gdg-green); }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0.5rem 0;
+      letter-spacing: 1px;
+    }
+
+    header h2 {
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: auto;
+      color: #c7d2fe;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid var(--gdg-blue);
+      padding-left: 1rem;
+    }
+
+    .winners-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .winner-card {
+      background: linear-gradient(180deg, #020617, var(--card-bg));
+      border-radius: 1rem;
+      padding: 1.5rem;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .winner-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    .position {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      background: var(--gdg-blue);
+      color: white;
+      padding: 0.6rem 0.9rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .team-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .team-members {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid #1f2937;
+      color: var(--text-muted);
+    }
+
+    footer span {
+      color: var(--gdg-blue);
+      font-weight: 600;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="gdg-badge">
+      <div class="dot blue"></div>
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+    <h1>TECHSPRINT 2026</h1>
+    <h2>Initial Evaluation Results</h2>
+    <p class="tagline">
+      Organized by <strong>Google Developer Groups</strong> — Celebrating innovation, problem‑solving, and impactful technology.
+      The following teams have successfully qualified the <strong>initial evaluation round</strong>.
+    </p>
+  </header>
+
+  <main>
+    <h3 class="section-title">🏆 Qualified Teams (Top Performers)</h3>
+<!-- 
+    <div class="winners-grid">
+      <!-- Winner Card 1 -->
+      <div class="winner-card">
+        <div class="position">Rank 1</div>
+        <div class="team-name">Quantum Coders</div>
+        <div class="team-members">
+          • Ananya S<br />
+          • Rahul M<br />
+          • Karthik R
+        </div>
+      </div>
+
+      <!-- Winner Card 2 -->
+      <div class="winner-card">
+        <div class="position">Rank 2</div>
+        <div class="team-name">ByteForge</div>
+        <div class="team-members">
+          • Piyush A<br />
+          • Sneha K<br />
+          • Arjun V
+        </div>
+      </div>
+
+      <!-- Winner Card 3 -->
+      <div class="winner-card">
+        <div class="position">Rank 3</div>
+        <div class="team-name">Neural Nexus</div>
+        <div class="team-members">
+          • Rohan P<br />
+          • Aditi L<br />
+          • Sanjay N
+        </div>
+      </div>
+
+      <!-- Additional Qualified Teams -->
+      <div class="winner-card">
+        <div class="position">Top 10</div>
+        <div class="team-name">Cloud Catalysts</div>
+        <div class="team-members">
+          • Mehul T<br />
+          • Isha G<br />
+          • Varun D
+        </div>
+      </div>
+
+      <div class="winner-card">
+        <div class="position">Top 10</div>
+        <div class="team-name">Code Comrades</div>
+        <div class="team-members">
+          • Nikhil B<br />
+          • Pooja R<br />
+          • Aman S
+        </div>
+      </div>
+
+    </div>
+  </main> -->
+
+  <footer>
+    <p>
+      Congratulations to all qualified teams 🎉<br />
+      Final round details will be communicated via <span>GDG TECHSPRINT 2026</span> official channels.
+    </p>
+  </footer>
+
+</body>
+</html>
